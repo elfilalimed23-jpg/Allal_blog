@@ -1,0 +1,10 @@
+
+title: "Les histoires de [Prénom]"
+description: "Souvenirs, notes et récits"
+lang: fr
+theme: minima
+plugins:
+  - jekyll-feed
+minima:
+  skin: auto
+show_excerpts: true
