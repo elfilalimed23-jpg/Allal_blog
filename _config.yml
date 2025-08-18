@@ -1,10 +1,77 @@
 
-title: "Les histoires de [Allal EL FILALI]"
-description: "Souvenirs, notes et récits"
+title: "Les histoires de Allal"
+description: "Souvenirs de vie, récits et réflexions"
+url: "https://elfilalimed23-jpg.github.io"
+baseurl: "/Allal_blog"
 lang: fr
-theme: minima
+timezone: Africa/Casablanca
+
+remote_theme: "mmistakes/minimal-mistakes"
+
 plugins:
   - jekyll-feed
-minima:
-  skin: auto
-show_excerpts: true
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+minimal_mistakes_skin: "dark"
+search: true
+logo: "/assets/images/avatar.png"
+
+author:
+  name: "Allal"
+  avatar: "/assets/images/avatar.png"
+  bio: "Écrire pour transmettre."
+  location: "Maroc"
+  links:
+    - label: "Accueil"
+      url: "/"
+      icon: "fas fa-home"
+    - label: "À propos"
+      url: "/a-propos/"
+      icon: "fas fa-user"
+    - label: "Contact"
+      url: "/contact/"
+      icon: "fas fa-envelope"
+
+paginate: 5
+paginate_path: "/page:num/"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+nav:
+  - title: "Accueil"
+    url: "/"
+  - title: "Catégories"
+    url: "/categories/"
+  - title: "À propos"
+    url: "/a-propos/"
+  - title: "Contact"
+    url: "/contact/"
+
+social:
+  name: "Les histoires de Allal"
+  links: []
+
+atom_feed:
+  hide: false

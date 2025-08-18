@@ -1,13 +1,23 @@
 
-# Kit de démarrage — Blog GitHub Pages (Jekyll + minima)
+# Starter moderne — Minimal Mistakes (GitHub Pages)
 
-Ce dossier contient une base **prête à l'emploi** pour créer un blog gratuit sur **GitHub Pages**.
+Ce kit installe un blog **moderne** avec le thème *Minimal Mistakes*.
 
-## Utilisation rapide
-1. Sur GitHub, crée un dépôt public nommé **ton-username.github.io** (remplace par ton vrai username).
-2. Clique **Add file → Upload files** et **dépose le contenu de ce dossier** (tous les fichiers et dossiers).
-3. Va dans **Settings → Pages** et vérifie :
-   - **Source** = *Deploy from a branch*
-   - **Branch** = `main` (ou `master`) / `/ (root)`
-4. Patiente 1–2 minutes, puis ouvre **https://ton-username.github.io/** 🎉
-# Allal_blog
+## Installation
+1. Copiez ces fichiers dans votre dépôt **Allal_blog**.
+2. Vérifiez dans *Settings → Pages* : *Deploy from a branch* sur `main`.
+3. Ouvrez **https://elfilalimed23-jpg.github.io/Allal_blog/**.
+
+> **Important** : Dans `_config.yml`, `baseurl` est `/Allal_blog`. Si vous transformez ce site en **site utilisateur** (dépôt `elfilalimed23-jpg.github.io`), mettez `baseurl: ""`.
+
+## Publier un article
+Créez un fichier dans `_posts/` au format `YYYY-MM-DD-titre.md` avec :
+```markdown
+---
+title: "Titre"
+categories: [Souvenirs]
+tags: [mémoire]
+---
+
+Texte...
+```
