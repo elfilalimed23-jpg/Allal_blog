@@ -1,17 +1,19 @@
 
-# Starter moderne — Minimal Mistakes (GitHub Pages)
+# Starter **moderne** — Minimal Mistakes (Project Pages)
 
-Ce kit installe un blog **moderne** avec le thème *Minimal Mistakes*.
+Ce kit applique le thème **Minimal Mistakes** avec menu, page d'accueil moderne, recherche, SEO et pages prêtes.
 
 ## Installation
-1. Copiez ces fichiers dans votre dépôt **Allal_blog**.
-2. Vérifiez dans *Settings → Pages* : *Deploy from a branch* sur `main`.
-3. Ouvrez **https://elfilalimed23-jpg.github.io/Allal_blog/**.
+1. Téléchargez ce ZIP et décompressez-le.
+2. Sur GitHub → dépôt **Allal_blog** → *Add file → Upload files* → uploadez **tout** (remplacez les fichiers existants).
+3. *Settings → Pages* : **Deploy from a branch** sur `main` (root).
+4. Ouvrez **https://elfilalimed23-jpg.github.io/Allal_blog/**.
 
-> **Important** : Dans `_config.yml`, `baseurl` est `/Allal_blog`. Si vous transformez ce site en **site utilisateur** (dépôt `elfilalimed23-jpg.github.io`), mettez `baseurl: ""`.
+> Important : `baseurl` est `/Allal_blog`.  
+> Si vous passez à un dépôt utilisateur (`elfilalimed23-jpg.github.io`), mettez `baseurl: ""` et changez `logo`/`author.avatar` en chemins relatifs au root.
 
 ## Publier un article
-Créez un fichier dans `_posts/` au format `YYYY-MM-DD-titre.md` avec :
+Créez un fichier dans `_posts/` au format `YYYY-MM-DD-titre.md` :
 ```markdown
 ---
 title: "Titre"

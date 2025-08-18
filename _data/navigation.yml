@@ -1,0 +1,10 @@
+
+main:
+  - title: "Accueil"
+    url: /
+  - title: "Catégories"
+    url: /categories/
+  - title: "À propos"
+    url: /a-propos/
+  - title: "Contact"
+    url: /contact/

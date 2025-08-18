@@ -6,42 +6,38 @@ baseurl: "/Allal_blog"
 lang: fr
 timezone: Africa/Casablanca
 
-remote_theme: "mmistakes/minimal-mistakes"
+# Thème moderne (GitHub Pages compatible)
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
+# Plugins supportés par GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
 
-minimal_mistakes_skin: "dark"
+# Apparence
+minimal_mistakes_skin: "air"   # options: default, dark, air, sunrise, neon...
 search: true
-logo: "/assets/images/avatar.png"
+logo: "/Allal_blog/assets/images/avatar.png"
 
 author:
   name: "Allal"
-  avatar: "/assets/images/avatar.png"
+  avatar: "/Allal_blog/assets/images/avatar.png"
   bio: "Écrire pour transmettre."
   location: "Maroc"
-  links:
-    - label: "Accueil"
-      url: "/"
-      icon: "fas fa-home"
-    - label: "À propos"
-      url: "/a-propos/"
-      icon: "fas fa-user"
-    - label: "Contact"
-      url: "/contact/"
-      icon: "fas fa-envelope"
 
+# Pagination (facultatif, non bloquant si plugin absent)
 paginate: 5
 paginate_path: "/page:num/"
 
+# Collections de pages
 collections:
   pages:
     output: true
     permalink: /:name/
 
+# Defaults (mise en page des posts et pages)
 defaults:
   - scope:
       path: ""
@@ -59,19 +55,11 @@ defaults:
       layout: single
       author_profile: true
 
-nav:
-  - title: "Accueil"
-    url: "/"
-  - title: "Catégories"
-    url: "/categories/"
-  - title: "À propos"
-    url: "/a-propos/"
-  - title: "Contact"
-    url: "/contact/"
-
+# SEO
 social:
   name: "Les histoires de Allal"
   links: []
 
+# Flux
 atom_feed:
   hide: false
