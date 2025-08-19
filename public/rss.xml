@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Mémoires</title>
+    <description>Préservons nos mémoires précieuses - Un espace dédié au partage de souvenirs, d'histoires familiales et de témoignages qui traversent les générations</description>
+    <link>https://blog-memoires.fr</link>
+    <atom:link href="https://blog-memoires.fr/rss.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 15 Jan 2024 10:00:00 GMT</lastBuildDate>
+    <generator>Blog Mémoires</generator>
+    
+    <item>
+      <title>Les souvenirs d'enfance au village</title>
+      <description>Retour sur une époque où les étés semblaient éternels et où chaque coin de rue cachait une aventure. Ces souvenirs d'enfance, gravés dans ma mémoire comme des photographies jaunies, me rappellent combien la simplicité peut être précieuse.</description>
+      <link>https://blog-memoires.fr/article/1</link>
+      <guid>https://blog-memoires.fr/article/1</guid>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 GMT</pubDate>
+      <author>Marie Dubois</author>
+      <category>Enfance</category>
+    </item>
+    
+    <item>
+      <title>Grand-mère et ses recettes secrètes</title>
+      <description>Dans sa cuisine empreinte de souvenirs, grand-mère gardait jalousement ses recettes transmises de génération en génération. Chaque plat était une histoire, chaque épice un voyage dans le temps.</description>
+      <link>https://blog-memoires.fr/article/2</link>
+      <guid>https://blog-memoires.fr/article/2</guid>
+      <pubDate>Wed, 10 Jan 2024 10:00:00 GMT</pubDate>
+      <author>Pierre Martin</author>
+      <category>Famille</category>
+    </item>
+    
+    <item>
+      <title>Les lettres d'amour de la guerre</title>
+      <description>Découvertes dans une vieille malle au grenier, ces lettres jaunies racontent une histoire d'amour qui a traversé les années sombres de la guerre. Chaque enveloppe porte en elle l'espoir et la tendresse d'un amour séparé par l'Histoire.</description>
+      <link>https://blog-memoires.fr/article/3</link>
+      <guid>https://blog-memoires.fr/article/3</guid>
+      <pubDate>Fri, 05 Jan 2024 10:00:00 GMT</pubDate>
+      <author>Antoine Leroy</author>
+      <category>Histoire</category>
+    </item>
+    
+  </channel>
+</rss>
