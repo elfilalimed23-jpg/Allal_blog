@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArticleCard } from '../components/ArticleCard';
 import { articles, categories } from '../data/articles';
-import { ArrowRight, BookOpen, Heart, Clock } from 'lucide-react';
+import { ArrowRight, BookOpen, Heart } from 'lucide-react';
 
 export const Home: React.FC = () => {
   const featuredArticle = articles[0];
