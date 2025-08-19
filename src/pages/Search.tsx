@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ArticleCard } from '../components/ArticleCard';
 import { SearchBox } from '../components/SearchBox';
@@ -17,21 +17,7 @@ export const Search: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [searchResults, setSearchResults] = useState(articles);
 
-  useEffect(() => {
-    performSearch();
-  }, [searchQuery, selectedCategory]);
-
-  useEffect(() => {
-    // Update URL when search query changes
-    const params = new URLSearchParams();
-    if (searchQuery) params.set('q', searchQuery);
-    if (selectedCategory) params.set('category', selectedCategory);
-    
-    const newUrl = params.toString() ? `/search?${params.toString()}` : '/search';
-    navigate(newUrl, { replace: true });
-  }, [searchQuery, selectedCategory, navigate]);
-
-  const performSearch = () => {
+  const performSearch = useCallback(() => {
     let results = articles;
 
     // Filter by search query
@@ -53,7 +39,21 @@ export const Search: React.FC = () => {
     }
 
     setSearchResults(results);
-  };
+  }, [searchQuery, selectedCategory]);
+
+  useEffect(() => {
+    performSearch();
+  }, [performSearch]);
+
+  useEffect(() => {
+    // Update URL when search query changes
+    const params = new URLSearchParams();
+    if (searchQuery) params.set('q', searchQuery);
+    if (selectedCategory) params.set('category', selectedCategory);
+    
+    const newUrl = params.toString() ? `/search?${params.toString()}` : '/search';
+    navigate(newUrl, { replace: true });
+  }, [searchQuery, selectedCategory, navigate]);
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
