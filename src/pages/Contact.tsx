@@ -25,7 +25,7 @@ export const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Anti-spam check
+      // Anti-spam check
     if (formData.honeypot) {
       setSubmitMessage('Erreur de validation. Veuillez réessayer.');
       return;
@@ -50,7 +50,7 @@ export const Contact: React.FC = () => {
         honeypot: '',
         consent: false
       });
-    } catch (error) {
+    } catch {
       setSubmitMessage('Une erreur est survenue. Veuillez réessayer plus tard.');
     } finally {
       setIsSubmitting(false);
@@ -75,7 +75,6 @@ export const Contact: React.FC = () => {
           n'hésitez pas à nous écrire.
         </p>
       </div>
-
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Contact Form */}
         <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm">
